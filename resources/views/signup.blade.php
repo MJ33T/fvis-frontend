@@ -37,35 +37,7 @@
 <body>
   <div class="body-inner">
 <!-- Header start -->
-<header id="header" class="header-one">
-  <div class="bg-white">
-    <div class="container">
-      <div class="logo-area">
-          <div class="row align-items-center">
-            <div class="logo col-lg-3 text-center text-lg-left mb-3 mb-md-5 mb-lg-0">
-                <a class="d-block" href="index.html">
-                  <img loading="lazy" src="images/favicon.png" alt="FVIS">
-                </a>
-            </div><!-- logo end -->
-  
-            <div class="col-lg-9 header-right">
-                <ul class="top-info-box">
-                  <li>
-                    <div class="info-box">
-                      <div class="info-box-content">
-                          <p class="info-box-title">Call Us</p>
-                          <p class="info-box-subtitle"><a href="tel:+60109097197">+60109097197</a></p>
-                      </div>
-                    </div>
-                  </li>
-                </ul><!-- Ul end -->
-            </div><!-- header right end -->
-          </div><!-- logo area end -->
-  
-      </div><!-- Row end -->
-    </div><!-- Container end -->
-  </div>
-
+<header id="header" class="header-one hea">
   <div class="site-navigation">
     <div class="container">
         <div class="row">
@@ -77,6 +49,7 @@
                 
                 <div id="navbar-collapse" class="collapse navbar-collapse">
                     <ul class="nav navbar-nav mr-auto">
+                      <img loading="lazy" src="images/favicon.png" alt="FVIS">
                         <li class="nav-item"><a class="nav-link" href="/">HOME</a></li>
               
                         <li class="nav-item dropdown">
@@ -95,7 +68,7 @@
                         <li class="nav-item"><a class="nav-link" href="/login">LOGIN</a></li>
                         <li class="nav-item"><a class="nav-link" href="/signup">SIGNUP</a></li>
                         <li class="nav-item"><a class="nav-link" href="/demo">DEMO</a></li>
-
+                        <li class="nav-item"><a class="nav-link" href="tel:+60109097197">Call Us : (+6) 010-909-7197</a></li>
 
                     </ul>
                 </div>
@@ -112,38 +85,12 @@
 </header>
 <!--/ Header end -->
 
-<div class="banner-carousel banner-carousel-1 mb-0">
-  <div class="banner-carousel-item" style="background-image:url(images/slider-main/bg1.jpg)">
-    <div class="slider-content">
-        <div class="container h-100">
-          <div class="row align-items-center h-100">
-              <div class="col-md-12 text-center">
-                <h3 class="slide-sub-title" data-animation-in="slideInRight">SIGNUP</h3>
-              </div>
-          </div>
-        </div>
-    </div>
-  </div>
-
-  <div class="banner-carousel-item" style="background-image:url(images/slider-main/bg2.jpg)">
-    <div class="slider-content text-left">
-        <div class="container h-100">
-          <div class="row align-items-center h-100">
-              <div class="col-md-12">
-                <h3 class="slide-sub-title" data-animation-in="slideInLeft">SIGNUP</h3>
-              </div>
-          </div>
-        </div>
-    </div>
-  </div>
-</div>
-
 <section class="ftco-section">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-6 col-lg-6">
                 <div class="signup-wrap p-4 p-md-5">
-              <h3 class="text-center mb-6">SIGNUP</h3>
+              <h3 style="color: antiquewhite" class="text-center mb-6">SIGNUP</h3>
                     <form action="/user_signup" class="login-form" method="POST">
                         @csrf
                     <div class="row">
@@ -164,7 +111,7 @@
                     </div>
                     <div class="row">
                         <div class="form-group col-md-6">
-                            <input type="text" class="form-control " name="m_number_ex" placeholder="Number Extension" required>
+                            <input type="text" class="form-control " name="m_number_ex" placeholder="Number Extension" >
                         </div>
                         <div class="form-group col-md-6">
                             <input type="text" class="form-control " name="m_number" placeholder="Mobile Number" required>
@@ -215,8 +162,8 @@
                     </div>
                     <div class="row">
                         <div class="form-group col-md-12">
-                            <label><input type="checkbox" class="" value="" style="width:auto" required> &nbsp;&nbsp; I have read and agree to the <a href="public/FVIS-PRIVACY-POLICY.pdf" target="_blank" style="text-decoration: none;">Privacy Policy </a></label> 
-                            <label><input type="checkbox" class="" value="" style="width:auto" required> &nbsp;&nbsp; I have read and agree to the <a href="public/TERMS-OF-USE-SERVICES.pdf" target="_blank" style="text-decoration: none;">Term & Condition </a></label>
+                            <label style="color: antiquewhite"><input type="checkbox" class="" value="" style="width:auto" required> &nbsp;&nbsp; I have read and agree to the <a href="public/FVIS-PRIVACY-POLICY.pdf" target="_blank" style="text-decoration: none;">Privacy Policy </a></label> 
+                            <label style="color: antiquewhite"><input type="checkbox" class="" value="" style="width:auto" required> &nbsp;&nbsp; I have read and agree to the <a href="public/TERMS-OF-USE-SERVICES.pdf" target="_blank" style="text-decoration: none;">Term & Condition </a></label>
                         </div>
                     </div>
                     <div class="form-group">
@@ -233,7 +180,7 @@
 
 
 
-<section class="subscribe no-padding">
+<section class="subscribe no-padding foo">
   <div class="container">
     <div class="row">
         <div class="col-md-4">
@@ -266,7 +213,26 @@
   <!--/ Container end -->
 </section>
 <!--/ subscribe end -->
-
+<style>
+  .foo{
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: blue;
+  }
+  .ftco-section{
+    margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 105vh;
+	font-family: 'Jost', sans-serif;
+	background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e);
+  }
+</style>
 
 
   {{-- <footer id="footer" class="footer bg-overlay">

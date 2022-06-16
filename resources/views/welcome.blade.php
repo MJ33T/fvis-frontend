@@ -38,33 +38,6 @@
   <div class="body-inner">
 <!-- Header start -->
 <header id="header" class="header-one">
-  <div class="bg-white">
-    <div class="container">
-      <div class="logo-area">
-          <div class="row align-items-center">
-            <div class="logo col-lg-3 text-center text-lg-left mb-3 mb-md-5 mb-lg-0">
-                <a class="d-block" href="index.html">
-                  <img loading="lazy" src="images/favicon.png" alt="FVIS">
-                </a>
-            </div><!-- logo end -->
-  
-            <div class="col-lg-9 header-right">
-                <ul class="top-info-box">
-                  <li>
-                    <div class="info-box">
-                      <div class="info-box-content">
-                          <p class="info-box-title">Call Us</p>
-                          <p class="info-box-subtitle"><a href="tel:+60109097197">+60109097197</a></p>
-                      </div>
-                    </div>
-                  </li>
-                </ul><!-- Ul end -->
-            </div><!-- header right end -->
-          </div><!-- logo area end -->
-  
-      </div><!-- Row end -->
-    </div><!-- Container end -->
-  </div>
 
   <div class="site-navigation">
     <div class="container">
@@ -77,6 +50,7 @@
                 
                 <div id="navbar-collapse" class="collapse navbar-collapse">
                     <ul class="nav navbar-nav mr-auto">
+                      <img loading="lazy" src="images/favicon.png" alt="FVIS">
                         <li class="nav-item"><a class="nav-link" href="/">HOME</a></li>
               
                         <li class="nav-item dropdown">
@@ -95,7 +69,7 @@
                         <li class="nav-item"><a class="nav-link" href="/login">LOGIN</a></li>
                         <li class="nav-item"><a class="nav-link" href="/signup">SIGNUP</a></li>
                         <li class="nav-item"><a class="nav-link" href="/demo">DEMO</a></li>
-
+                        <li class="nav-item"><a class="nav-link" href="tel:+60109097197">Call Us : (+6) 010-909-7197</a></li>
 
                     </ul>
                 </div>
@@ -214,9 +188,9 @@
 </section><!-- Feature are end -->
 
 
-<section id="ts-service-area" class="ts-service-area pb-0">
+<section  id="ts-service-area" class="ts-service-area pb-0">
   <div class="container">
-    <div class="row text-center">
+    <div class="row text-center" >
         <div class="col-12">
           <h2 class="section-title">WHY CHOOSE </h2>
           <h3 class="section-sub-title">FIRST VIBRANT INTEGRATED SERVICES?</h3>
@@ -298,6 +272,21 @@
   </div>
   <!--/ Container end -->
 </section><!-- Service end -->
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <h3 style="text-align: center" class="section-sub-title">All Licenses</h3>
+      </div>
+      <div class="col-md-6">
+        <embed src="sample.pdf" type="application/pdf" width="100%" height="300px" />
+      </div>
+      <div class="col-md-6">
+        <embed src="sample.pdf" type="application/pdf" width="100%" height="300px" />
+      </div>
+    </div>
+  </div>
+</section>
 
 <section id="project-area" class="project-area solid-bg">
   <div class="container">
@@ -317,16 +306,15 @@
 
           <div class="col-lg-4 col-sm-6 shuffle-item" data-groups="[&quot;government&quot;,&quot;healthcare&quot;]">
             <div class="project-img-container">
-              <a class="gallery-popup" href="images/projects/project1.jpg" aria-label="project-img">
+              <a  href="images/projects/project1.jpg" aria-label="project-img">
                 <img class="img-fluid" src="images/projects/project1.jpg" alt="project-img">
                 <span class="gallery-icon"><i class="fa fa-plus"></i></span>
               </a>
               <div class="project-item-info">
                 <div class="project-item-info-content">
                   <h3 class="project-item-title">
-                    <a href="projects-single.html">Capital Teltway Building</a>
+                    <a href="/login">View Image</a>
                   </h3>
-                  <p class="project-cat">Commercial, Interiors</p>
                 </div>
               </div>
             </div>
@@ -341,9 +329,8 @@
               <div class="project-item-info">
                 <div class="project-item-info-content">
                   <h3 class="project-item-title">
-                    <a href="projects-single.html">Ghum Touch Hospital</a>
+                    <a href="/login">View Image</a>
                   </h3>
-                  <p class="project-cat">Healthcare</p>
                 </div>
               </div>
             </div>
@@ -358,9 +345,8 @@
               <div class="project-item-info">
                 <div class="project-item-info-content">
                   <h3 class="project-item-title">
-                    <a href="projects-single.html">TNT East Facility</a>
+                    <a href="/login">View Image</a>
                   </h3>
-                  <p class="project-cat">Government</p>
                 </div>
               </div>
             </div>
@@ -375,9 +361,8 @@
               <div class="project-item-info">
                 <div class="project-item-info-content">
                   <h3 class="project-item-title">
-                    <a href="projects-single.html">Narriot Headquarters</a>
+                    <a href="/login">View Image</a>
                   </h3>
-                  <p class="project-cat">Infrastructure</p>
                 </div>
               </div>
             </div>
@@ -392,9 +377,8 @@
               <div class="project-item-info">
                 <div class="project-item-info-content">
                   <h3 class="project-item-title">
-                    <a href="projects-single.html">Kalas Metrorail</a>
+                    <a href="/login">View Image</a>
                   </h3>
-                  <p class="project-cat">Infrastructure</p>
                 </div>
               </div>
             </div>
@@ -409,9 +393,8 @@
               <div class="project-item-info">
                 <div class="project-item-info-content">
                   <h3 class="project-item-title">
-                    <a href="projects-single.html">Ancraft Avenue House</a>
+                    <a href="/login">View Image</a>
                   </h3>
-                  <p class="project-cat">Residential</p>
                 </div>
               </div>
             </div>
@@ -419,11 +402,6 @@
         </div><!-- shuffle end -->
       </div>
 
-      <div class="col-12">
-        <div class="general-btn text-center">
-          <a class="btn btn-primary" href="projects.html">View All Projects</a>
-        </div>
-      </div>
 
     </div><!-- Content row end -->
   </div>
@@ -431,7 +409,7 @@
 </section><!-- Project area end -->
 
 
-<section class="subscribe no-padding">
+<section class="subscribe no-padding foo">
   <div class="container">
     <div class="row">
         <div class="col-md-4">
@@ -511,6 +489,7 @@
 
   <!-- Template custom -->
   <script src="js/script.js"></script>
+  
 
   </div><!-- Body inner end -->
   </body>

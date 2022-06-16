@@ -82,6 +82,8 @@ Route::post('/add_closing', [FormController::class, 'closing_add']);
 
 Route::post('/add_newsletter', [FormController::class, 'newsletter_add']);
 
+Route::post('/user_signup', [UserController::class, 'user_signup']);
+
 
 
 
