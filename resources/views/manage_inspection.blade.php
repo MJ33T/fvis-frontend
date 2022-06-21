@@ -25,7 +25,7 @@
                                     </select>
                                     <br>
                                     <input type="file" class="form-control" name="in_file">
-                                    </form>
+                                    
                                 </div>
                             </div>
                         </div>
@@ -33,7 +33,7 @@
                             <button type="submit" class="btn btn-primary">Submit</button>
                         </div>
                     </div>
-
+                </form>
                 </div>
             </div>
         </div>

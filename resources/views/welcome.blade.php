@@ -16,6 +16,7 @@
   <!-- Favicon
 ================================================== -->
   <link rel="icon" type="image/png" href="{{asset('images/favicon.png')}}">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
   <!-- CSS
 ================================================== -->
@@ -32,12 +33,17 @@
   <link rel="stylesheet" href="{{asset('plugin/colorbox/colorbox.css')}}">
   <!-- Template styles-->
   <link rel="stylesheet" href="{{asset('css/style.css')}}">
+  @php
+      use Illuminate\Support\Facades\DB;
+      $msps = DB::table('socials')->get();
+  @endphp
 
 </head>
 <body>
   <div class="body-inner">
 <!-- Header start -->
 <header id="header" class="header-one">
+  
 
   <div class="site-navigation">
     <div class="container">
@@ -69,7 +75,7 @@
                         <li class="nav-item"><a class="nav-link" href="/login">LOGIN</a></li>
                         <li class="nav-item"><a class="nav-link" href="/signup">SIGNUP</a></li>
                         <li class="nav-item"><a class="nav-link" href="/demo">DEMO</a></li>
-                        <li class="nav-item"><a class="nav-link" href="tel:+60109097197">Call Us : (+6) 010-909-7197</a></li>
+                        <li class="nav-item"><a class="nav-link" href="tel:+60109097197">Call Us : (+60) 10-909-7197</a></li>
 
                     </ul>
                 </div>
@@ -112,83 +118,66 @@
   </div>
 </div>
 
-
-<section id="ts-features" class="ts-features">
+<section>
   <div class="container">
+    <iframe width="1110" height="600" src="https://www.youtube.com/embed/gM8vfn3_CqE?&autoplay=1&mute=1" title="YouTube video player" frameborder="2" allow="accelerometer;  clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+    </iframe>
     <div class="row">
-        <div class="col-lg-6">
-          <div class="ts-intro">
-              <h3 class="into-sub-title">Premium Investment Company in Malaysia</h3>
-              <p>First Vibrant Integrated Services boasts a supreme team of highly-skilled individuals with immense experience across the entire financial industry – and beyond!
-                Frederic J. Miscoe II founded the FVIS group with the main aim of providing premium services to a global community in project financing, real estate consulting, commodity trading and financial investment in Malaysia.
-                Our exceptional consulting, financing and trading services are built on a solid foundation of integrity and superior corporate governance, supported by a focused approached and unfailing drive to always exceed our clients’ expectations.Our bespoke service provides financial investment advice, tailored to your individual requirements and offering investment solutions to perfectly suit all your needs. Our dedicated team invests considerable time into analyzing all the variables – including risk and return levels – that could potentially influence any given financial solution. This enables us to craft a robust financial solution, primed to deliver exceptional outcomes.
-                This stead-fast approach allows us to continually provide profitable solutions for all parties concerned.
-                </p>
-          </div><!-- Intro box end -->
-
-          <div class="gap-20"></div>
-
-          <div class="row">
-            <div class="col-lg-12">
-                <div class="ts-intro">
-                    <p>Our support is available to anyone that significantly contributes to the development of their country whether you are an individual, company or large scale organization. We cater to any substantial industry – from banking to tourism, hospitality and entertainment.</p>
-                    <p>With multiple branches in over 9 countries, the FVIS group has become synonymous with the word ‘successful’. Top brands and trustworthy companies choose FVIS as their trusted partner – joining us in curating personalized portfolios that cover all aspects of our clients’ project financing needs.</p>
-                    <p>Through these partnerships, we’ve already made billions of dollars available to our clients, in the form of either equity or loans. To enable FVIS to offer time-bound, highly-profitable solutions to our sought-after client base, we’ve fostered close associations with various reputable role-players in the following sectors:</p>
-                    <ul>
-                    <li><p>Oil & Gas</p></li>
-                    <li><p>Agriculture</p></li>
-                    <li><p>Banking & Finance</p></li>
-                    <li><p>Real Estates & Construction</p></li>
-                    <li><p>Green Energy & Power Plants</p></li>
-                    <li><p>Human Resources (HR) & Manpower</p></li>
-                    </ul>
-                </div>
-            </div>
-          </div><!-- Content row 1 end -->
-        </div><!-- Col end -->
-
-        <div class="col-lg-6 mt-4 mt-lg-0">
-          <h3 class="into-sub-title">Our Proven Investment Services in Malaysia to the Global Community</h3>
-          <p>Our comprehensive offering of investment solutions comprise:
-
-            <ul>
-                <li><p><a href="#">Business Setup</a></p></li>
-                <li><p><a href="#">Project Financing</a></p></li>
-                <li><p><a href="#">Commodity Trading</a></p></li>
-                <li><p><a href="#">Construction Services</a></p></li>
-                <li><p><a href="#">Property Management</a></p></li>
-                <li><p><a href="#">Workforce/Human Resources</a></p></li>
-                <li><p><a href="https://fvis.live/financial-investment-services">Financial Investment Solutions</a></p></li>
-                <li><p><a href="#">Real Estate Consulting and Development</a></p></li>
-                <li><p><a href="https://fvis.live/supply-management-services">Supply Management Services</a></p></li>
-              </ul>
-            </p>
-
-          <div class="accordion accordion-group" id="our-values-accordion">
-              <br>
-              <br>
-            <h3>Our Mission</h3>
-			<ul>
-		    <li><p>Offer up to date investment advice</p></li>
-		    <li><p>Develop tailor-made investment portfolios</p></li>
-		    <li><p>Dedicated, focused and personalized service</p></li>
-		    <li><p>Provide a broad selection of investment solutions</p></li>
-	    	<li><p>Minimizing client risks while maximizing their returns</p></li>
-    		<li><p>Offer transparent solutions that promote trust and respect</p></li>
-			<li><p>Empower entrepreneurs to seize transformational opportunities</p></li>
-			<li><p>Ensure lucrative partner portfolios with constant monitoring and maintenance</p></li>
-			
-			</ul>
-          </div>
-          <!--/ Accordion end -->
-
-        </div><!-- Col end -->
-    </div><!-- Row end -->
-  </div><!-- Container end -->
-</section><!-- Feature are end -->
+      <div class="col-md-4">
+        <a href="/premium_investment">
+          <img src="{{asset('Homepic/investment.jpeg')}}" style="width: 100%" height="300" alt="banner">
+        </a>
+        <h4 style="text-align: center">
+          <a href="/premium_investment" style="color:#001e45; text-decoration: none;">INVESTMENT</a>
+        </h4>
+      </div>
+      <div class="col-md-4">
+        <a href="/investment_service">
+          <img src="{{asset('Homepic/service.jpeg')}}" style="width: 100%" height="300" alt="banner">
+        </a>
+        <h4 style="text-align: center">
+          <a href="/investment_service" style="color:#001e45; text-decoration: none;">SERVICES</a>
+        </h4>
+      </div>
+      <div class="col-md-4">
+        <a href="/our_mission">
+          <img src="{{asset('Homepic/mission.jpeg')}}" style="width: 100%" height="300" alt="banner">
+        </a>
+        <h4 style="text-align: center">
+          <a href="/our_mission" style="color:#001e45; text-decoration: none;">OUR MISSION</a>
+        </h4>
+      </div>
+      <div class="col-md-4">
+        <a href="/licenses">
+          <img src="https://d11ak7fd9ypfb7.cloudfront.net/com_images/BottomRangeGrid/A1/1.jpg" style="width: 100%" height="300" alt="banner">
+        </a>
+        <h4 style="text-align: center">
+          <a href="/licenses" style="color:#001e45; text-decoration: none;">LICENSES</a>
+        </h4>
+      </div>
+      <div class="col-md-4">
+        <a href="/gallery">
+          <img src="https://d11ak7fd9ypfb7.cloudfront.net/com_images/BottomRangeGrid/A1/1.jpg" style="width: 100%" height="300" alt="banner">
+        </a>
+        <h4 style="text-align: center">
+          <a href="/gallery" style="color:#001e45; text-decoration: none;">GALLERY</a>
+        </h4>
+      </div>
+      <div class="col-md-4">
+        <a href="/about_us">
+          <img src="{{asset('Homepic/about_us.jpeg')}}" style="width: 100%" height="300" alt="banner">
+        </a>
+        <h4 style="text-align: center">
+          <a href="/about_us" style="color:#001e45; text-decoration: none;">ABOUT US</a>
+        </h4>
+      </div>
+     
+    </div>
+  </div>
+</section>
 
 
-<section  id="ts-service-area" class="ts-service-area pb-0">
+
   <div class="container">
     <div class="row text-center" >
         <div class="col-12">
@@ -271,25 +260,10 @@
 
   </div>
   <!--/ Container end -->
-</section><!-- Service end -->
-<section>
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-12">
-        <h3 style="text-align: center" class="section-sub-title">All Licenses</h3>
-      </div>
-      <div class="col-md-6">
-        <embed src="sample.pdf" type="application/pdf" width="100%" height="300px" />
-      </div>
-      <div class="col-md-6">
-        <embed src="sample.pdf" type="application/pdf" width="100%" height="300px" />
-      </div>
-    </div>
-  </div>
-</section>
 
-<section id="project-area" class="project-area solid-bg">
-  <div class="container">
+
+
+  {{-- <div class="container">
     <div class="row text-center">
       <div class="col-lg-12">
         <h3 class="section-sub-title">Gallery</h3>
@@ -405,21 +379,28 @@
 
     </div><!-- Content row end -->
   </div>
-  <!--/ Container end -->
-</section><!-- Project area end -->
+  <!--/ Container end --> --}}
+
 
 
 <section class="subscribe no-padding foo">
   <div class="container">
     <div class="row">
-        <div class="col-md-4">
+        <div class="col-md-5">
           <div class="subscribe-call-to-acton">
-              <h3>Can We Help?</h3>
-              <h4>(+6) 010-909-7197</h4>
+              <h3 style="color: antiquewhite">Social Link</h3>
+              <div class="row">
+                @foreach ($msps as $msp)
+                <div class="col-md-1">
+                  <a href="{{$msp->social_url}}"><i style="font-size: 30px" class="fa fa-{{$msp->title}}"></i></a>
+                </div>
+                @endforeach
+              </div>
+              
           </div>
         </div><!-- Col end -->
 
-        <div class="col-md-8">
+        <div class="col-md-7">
           <div class="ts-newsletter row align-items-center">
               <div class="col-md-5 newsletter-introtext">
                 <h4 class="text-white mb-0">Newsletter Sign-up</h4>

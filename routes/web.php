@@ -54,7 +54,41 @@ Route::view('/user_dashboard', 'user_dashboard');
 
 Route::get('/personal_form', [FormController::class, 'personal_form_show']);
 
+Route::post('/add_perinfo', [FormController::class, 'add_personal_form']);
+
+Route::get('/update_perinfo', [FormController::class, 'update_personal_form_show']);
+
+Route::post('/update_perinfo', [FormController::class, 'update_personal_form']);
+
 Route::get('/company_form', [FormController::class, 'company_form_show']);
+
+Route::get('/update_cominfo', [FormController::class, 'update_company_form_show']);
+
+Route::post('/update_cominfo', [FormController::class, 'update_company_form']);
+
+Route::get('/cis_form', [FormController::class, 'cis_form_show']);
+
+Route::post('/add_cisinfo', [FormController::class, 'add_cis_form']);
+
+Route::get('/update_cisinfo', [FormController::class, 'update_cis_form_show']);
+
+Route::post('/update_cisinfo', [FormController::class, 'update_cis_form']);
+
+Route::get('/pqf_form', [FormController::class, 'pqf_form_show']);
+
+Route::post('/add_pqfinfo', [FormController::class, 'add_pqf_form']);
+
+Route::get('/update_pqfinfo', [FormController::class, 'update_pqf_form_show']);
+
+Route::post('/update_pqfinfo', [FormController::class, 'update_pqf_form']);
+
+Route::get('/ilrf_form', [FormController::class, 'ilrf_form_show']);
+
+Route::post('/add_ilrfinfo', [FormController::class, 'add_ilrf_form']);
+
+Route::get('/update_ilrfinfo', [FormController::class, 'update_ilrf_form_show']);
+
+Route::post('/update_ilrfinfo', [FormController::class, 'update_ilrf_form']);
 
 Route::get('/premiun_retainer', [FormController::class, 'premiun_retainer_show']);
 
@@ -67,6 +101,10 @@ Route::get('/closing', [FormController::class, 'closing_show']);
 Route::get('/collateral', [FormController::class, 'collateral_show']);
 
 Route::get('/bank_details', [FormController::class, 'bank_details_show']);
+
+Route::get('/update_bankinfo', [FormController::class, 'update_bank_show']);
+
+Route::post('/update_bankinfo', [FormController::class, 'update_bank']);
 
 Route::get('/plan_upgarde', [FormController::class, 'plan_upgarde_show']);
 

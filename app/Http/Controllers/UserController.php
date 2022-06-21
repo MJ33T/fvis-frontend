@@ -56,7 +56,7 @@ class UserController extends Controller
             ];
             // Notification::route('mail', $req->email)->notify(new SendEmailNotification($details));
             // Notification::send($req->email, new SendEmailNotification($details));
-            return redirect('/signup');
+            return redirect('/login');
         }
         else{
             return view('login');

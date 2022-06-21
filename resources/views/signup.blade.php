@@ -220,7 +220,7 @@
     right: 0;
     bottom: 0;
     width: 100%;
-    background-color: blue;
+    background-color: #003B49;
   }
   .ftco-section{
     margin: 0;

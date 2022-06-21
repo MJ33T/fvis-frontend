@@ -1,3 +1,6 @@
+@php
+    use Illuminate\Support\Str;
+@endphp
 {{-- <body class="hold-transition sidebar-mini layout-fixed"> --}}
   <!-- Navbar -->
   <nav class="main-header navbar navbar-expand navbar-white navbar-light">
@@ -26,7 +29,7 @@
       <!-- Sidebar user panel (optional) -->
       <div class="user-panel mt-3 pb-3 mb-3 d-flex">
         <div class="info">
-          {{-- <a href="#" class="d-block">{{Str::ucfirst(Session::get('user')['name'])}}</a> --}}
+          <a href="#" class="d-block">{{Session::get('user')->f_name.' '.Session::get('user')->l_name}}</a>
         </div>
       </div>
 
@@ -60,7 +63,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="/admin/dashboard" class="nav-link">
+            <a href="/cis_form" class="nav-link">
               <i class="nav-icon fas fa-file-text"></i>
               <p>
                 CIS Form
@@ -68,15 +71,15 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="/admin/dashboard" class="nav-link">
+            <a href="/pqf_form" class="nav-link">
               <i class="nav-icon fas fa-file-text"></i>
               <p>
-                QF Form
+                PQF Form
               </p>
             </a>
           </li>
           <li class="nav-item">
-            <a href="/admin/dashboard" class="nav-link">
+            <a href="/ilrf_form" class="nav-link">
               <i class="nav-icon fas fa-file-text"></i>
               <p>
                 ILRF Form

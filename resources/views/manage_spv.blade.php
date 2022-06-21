@@ -21,10 +21,10 @@
                                         @csrf
                                     <select id="id1" class="form-control" name="spv" onclick="myFunction()">
                                         <option selected>Select SPV</option>
-                                        <option value="1">Company Acquisition</option>
-                                        <option value="2">Bank Account Openning</option>
-                                        <option value="3">Office Setup and Requirement</option>
-                                        <option value="4">Licensing</option>
+                                        <option value="Company Acquisition">Company Acquisition</option>
+                                        <option value="Bank Account Openning">Bank Account Openning</option>
+                                        <option value="Office Setup and Requirement">Office Setup and Requirement</option>
+                                        <option value="Licensing">Licensing</option>
 
                                     </select>
                                     <br>
@@ -39,7 +39,7 @@
                                     </select>
                                     <br>
                                     <input type="file" class="form-control" name="spv_file">
-                                    </form>
+                                    
                                 </div>
                             </div>
                         </div>
@@ -47,7 +47,7 @@
                             <button type="submit" class="btn btn-primary">Submit</button>
                         </div>
                     </div>
-
+                </form>
                 </div>
             </div>
         </div>
@@ -62,7 +62,7 @@
 <script>
   function myFunction() {
     var x = document.getElementById("id1").value;
-    if (x == "4") document.getElementById("id2").style.display = "block";
+    if (x == "Licensing") document.getElementById("id2").style.display = "block";
     else document.getElementById("id2").style.display = "none";
 }
 </script>

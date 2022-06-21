@@ -26,7 +26,7 @@
                                     </select>
                                     <br>
                                     <input type="file" class="form-control" name="pr_file">
-                                    </form>
+                                    
                                 </div>
                             </div>
                         </div>
@@ -34,7 +34,7 @@
                             <button type="submit" class="btn btn-primary">Add Premiun Retainer</button>
                         </div>
                     </div>
-
+                </form>
                 </div>
             </div>
         </div>
